@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class StartUp {	
 	public WebDriver getWebDriver(String browser){
 		if(browser.equalsIgnoreCase("Chrome")){
+			System.out.println("this is Chrome");
 			return new ChromeDriver();
 		}
 		else if(browser.equalsIgnoreCase("Firefox")){
