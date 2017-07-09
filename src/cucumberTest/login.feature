@@ -7,7 +7,12 @@ Scenario: Successful Login with Valid Credentials
 #	And User enters UserName and Password
 #	Then Gmail inbox is displayed
 
-#@Logout
-#Scenario: Successful LogOut
-#	When User LogOut from the Application
-#	Then Message displayed LogOut Successfully
+@Inbox
+Scenario: Show Gmail Inbox	
+	When user is displayed with gmail inbox
+	Then user clicks on Setting page
+	
+@Logout
+Scenario: Successful LogOut
+	When User LogOut from the Application
+	Then Message displayed LogOut Successfully
