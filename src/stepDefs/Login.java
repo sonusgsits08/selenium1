@@ -18,9 +18,9 @@ public class Login {
 	
 	@Given("^User is on Home Page$")
 	public void User_is_on_Home_Page() {
-		PageFactory.initElements(driver, this);
-		driver.get("http://www.gmail.com");
 		System.out.println("user is on gmail.com page now");
+		PageFactory.initElements(driver, this);
+		driver.get("http://www.gmail.com");	
 	}
 
 	@When("^User clicks on sign in link$")
